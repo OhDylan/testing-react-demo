@@ -15,11 +15,11 @@ const SubscribeForm = () => {
         <div className="container">
             <h1>Subscribe To Our Newsletter</h1>
             <form className="form">
-                <label for="email">Email Address</label>
+                <label htmlFor="email">Email Address</label>
                 <input onChange={handleChange} type="email" id="email" name="email" placeholder="Email Address" value={email} />
                 <input type="checkbox" name="agreement_checkbox" id="agreement_checkbox" />
-                <label for="agreement_checkbox">I agree to disagree whatever the terms and conditions are.</label>
-                <button type="submit" className="button" disabled={isDisabled} >SUBSCRIBE</button>
+                <label htmlFor="agreement_checkbox">I agree to disagree whatever the terms and conditions are.</label>
+                <button name="subscribe-button" type="submit" className="button" disabled={isDisabled} >Subscribe</button>
             </form>
         </div>
     );
