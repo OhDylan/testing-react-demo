@@ -2,8 +2,6 @@ import React from 'react';
 import { render,screen,waitForElementToBeRemoved } from '@testing-library/react';
 import PokeSearch from './PokeSearch';
 
-
-
 it("Loading is shown until the Pokemon is fetched", async () => {
     render(<PokeSearch />);
 
@@ -24,5 +22,5 @@ it("The Pokemon name is displayed correctly after it has been fetched", async ()
     render(<PokeSearch />);
     const pokemonName = await screen.findByText('bulbasaur');
     expect(pokemonName).toBeInTheDocument(); 
-})
+});
 

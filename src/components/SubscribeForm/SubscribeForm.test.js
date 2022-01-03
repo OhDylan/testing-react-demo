@@ -18,7 +18,6 @@ it("The subscribe button becomes enabled when we start typing in the input text 
     expect(screen.getByRole("button", {name: /subscribe/i})).toBeEnabled();
 });
 
-// snapshot testing
 it("Test to match snapshot of component", () => {
     const subscribeFormTree = renderer.create(<SubscribeForm />).toJSON();
     expect(subscribeFormTree).toMatchSnapshot();

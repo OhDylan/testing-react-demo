@@ -15,8 +15,6 @@ const PokeSearch = () => {
             .catch((err) => console.log(err));
     }, [])
 
-
-
     return (
         <div>
             {isLoading
